@@ -19,15 +19,22 @@ document.write(`<h3>Multiplicación de los numeros ingresado es ${ResultadoMulti
 //Ejercicio 2
 let apellidoYnombre = prompt(`Ingrese tu nombres y apellido `);
 document.write(`<br><br>el nombre y apellido es ${apellidoYnombre} `);
-if(apellidoYnombre.includes(`a`) && apellidoYnombre.includes(`m`)){
-    console.log(`El nombres y apellido posee letra a y m `);
-    document.write(`<br>El nombres y apellido posee letra a y m `)
+if(apellidoYnombre.includes(`a`) || apellidoYnombre.includes(`m`)){
+    console.log(`El nombres y apellido posee letra a o m `);
+    document.write(`<br>El nombres y apellido posee letra a o m `)
 } else{
-    console.log(`El nombres NO posee letra a y m`);
-    document.write(`<br>El nombres NO posee letra a y m`)
+    console.log(`El nombres NO posee letra a o m`);
+    document.write(`<br>El nombres NO posee letra a o m`)
 }
-// console.log(`el apellido posee letra a o m `, apellido.includes(`a`) || apellido.includes(`m`));
-// console.log(`el nombre posee letra a o m `, nombre.includes(`a`) || nombre.includes(`m`));
+
+// en el caso que fuera que posea ambas letras el apellido y nombre
+// if(apellidoYnombre.includes(`a`) && apellidoYnombre.includes(`m`)){
+//     console.log(`El nombres y apellido posee letra a y m `);
+//     document.write(`<br>El nombres y apellido posee letra a y m `)
+// } else{
+//     console.log(`El nombres NO posee letra a y m`);
+//     document.write(`<br>El nombres NO posee letra a y m`)
+
 
 //Ejercicio 3 
 let pablitoGuiones = ('<br><br>Pablito-clavo-un-clavito');
